@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tara Laro</title>
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tara Laro</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
 
-    .centered-div {
-      text-align: center;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #fff;
-    }
+      .centered-div {
+        text-align: center;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        outline: none;
+      }
 
-    h2 {
-      margin-bottom: 20px;
-    }
+      h2 {
+        margin-bottom: 20px;
+      }
 
-    .btn-group {
-      display: flex;
-      justify-content: center;
-    }
+      .btn-group {
+        display: flex;
+        justify-content: center;
+      }
 
-    button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
+      button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 50%;
+        height: 30px;
+        margin: 2px;
+        background-size: 100% 100%;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered-div">
+      <h2>Tara ML</h2>
+      <div class="btn-group">
+        <button type="button" onclick="redirectToPhub()">Pass</button>
+        <button type="button" onclick="openApp()">Tara</button>
+      </div>
+    </div>
+    <script>
+      function redirectToPhub() {
+        window.location.href = 'https://youtu.be/lbwotKOR-Zo?si=idI_Pr7eonMNfW7x';
+      }
 
-<div class="centered-div">
-  <h2>Centered Text</h2>
-  <div class="btn-group">
-    <button type="button">Button 1</button>
-    <button type="button">Button 2</button>
-  </div>
-</div>
-
-</body>
+      function openApp() {
+        var packageName = 'com.mobile.legends';
+        window.location.href = 'intent://' + packageName + '#Intent;scheme=package;end';
+      }
+    </script>
+  </body>
 </html>
