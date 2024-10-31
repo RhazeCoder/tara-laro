@@ -1,79 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tara Laro</title>
-    <style>
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f0f0f0;
-        overflow: hidden;
-      }
 
-      .centered-div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        width: 200px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        background-color: #fff;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        outline: none;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play us ML</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Varela+Round&display=swap"
+    rel="stylesheet">
+</head>
 
-      h2 {
-        margin-bottom: 20px;
-      }
+<body>
+  <div class="centered-div">
+    <h2>play us ML?</h2>
+    <img src="character.gif" alt="Justine Pogi" class="character">
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn pass" onclick="playUngol()">Pass</button>
+    <button type="button" class="btn play" onclick="openApp()">G!</button>
+  </div>
+  <script src="script.js"></script>
+</body>
 
-      .btn-group {
-        display: flex;
-        justify-content: center;
-      }
-
-      button {
-        margin: 0 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        width: 100%;
-        height: 30px;
-        margin: 2px;
-        background-size: 100% 100%;
-        background-color: #E0E0E0;
-        border-radius: 3px;
-        font-size: 14px;
-        display: flex;
-        border: none;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="centered-div">
-      <h2>Tara ML</h2>
-      <div class="btn-group">
-        <button type="button" onclick="redirectToPhub()">Pass</button>
-        <button type="button" onclick="openApp()">Tara</button>
-      </div>
-    </div>
-    <script>
-      function redirectToPhub() {
-        window.location.href = 'https://youtu.be/lbwotKOR-Zo?si=idI_Pr7eonMNfW7x';
-      }
-
-      function openApp() {
-        window.location.href = 'https://r8qs.adj.st/appinvites/TeamMatch%2fPElJ%2fxpQdC5Y5ZROpX%2fQwC68T%2b41p97yWd87K569alQZfc6ue0%2bbr6pyS9s6flWM?adjust_t=q0le9d_ynoul8&adjust_deeplink=mobilelegends%3a%2f%2fappinvites%2fTeamMatch%2fPElJ%2fxpQdC5Y5ZROpX%2fQwC68T%2b41p97yWd87K569alQZfc6ue0%2bbr6pyS9s6flWM';
-      }
-    </script>
-  </body>
 </html>
